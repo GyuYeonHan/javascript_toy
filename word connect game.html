@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Word Connect Game</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        var word = ""
+
+        while (true) {
+            var next = prompt("현재 단어 : " + word + "\n다음 단어를 입력하세요. (종료하려면 \"끝\"을 입력하세요.)");
+            if (next === "끝" || next === null) {
+                break;
+            }
+
+            if (word === "") {
+                word = next;
+                document.write(word + "</br>");
+            } else {
+                if (word[word.length - 1] === next[0]) {
+                    word = next;
+                    document.write(word + "</br>");
+                } else {
+                    alert("말이 이어지지 않습니다. 다시 입력해 주세요.")
+                }
+            }
+            setInterval(1000);
+        }
+
+    </script>
+
+</body>
+
+</html>
