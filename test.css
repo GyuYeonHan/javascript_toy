@@ -1,0 +1,15 @@
+h1 {
+    color:black;
+    display:inline;
+}
+h1:hover {
+    color:blue;
+}
+
+input {
+    background-color: black;
+}
+
+input:focus {
+    background-color: white;
+}

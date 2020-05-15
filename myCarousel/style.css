@@ -1,0 +1,62 @@
+.container {
+    width: 100%;
+}
+
+.cell {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top:0;
+    left:0;
+    font-size: 3rem;
+    font-weight: 500;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.SHOWING {
+    opacity: 1;
+}
+
+button {
+    position: absolute;
+    width:70px;
+
+    background-color: #f8585b;
+
+    border: none;
+    border-radius: 6px;
+    color:#fff;
+
+    padding: 15px 0;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+    font-size: 15px;
+
+    margin: 2px;
+
+    cursor: pointer;
+    transition:background-color 0.1s ease;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+.leftBtn {
+    top:225px;
+    left:10px;
+}
+
+.rightBtn {
+    top:225px;
+    right:10px;
+}
